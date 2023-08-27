@@ -12,12 +12,55 @@ html {
     font-size: 32px;
     font-weight: 300;
 }
+.display-none {
+    display: none;
+}
 .text-align_center {
     text-align: center;
 }
 @media (min-width: 1200px) {
     .container {
         max-width: 1170px;
+    }
+}
+
+/* SCREENSAVER */ 
+.screensaver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    z-index: 999;
+}
+.screensaver-notebook {
+    position: relative;
+    width: 40vw;
+    height: 40vw;
+    background: url(../img/screensaver-notebook.png) no-repeat;
+    background-size: contain;
+}
+.screen {
+    position: absolute;
+    top: 22.9%;
+    left: 12.3%;
+    width: 75.5%;
+    height: 42.3%;
+    background: linear-gradient(rgb(42, 245, 152), rgb(0, 158, 253));
+    opacity: 0;
+    transition: opacity .3s linear;
+}
+.screen:hover {
+    opacity: 1;
+}
+.screenClick {
+    animation: screenClick 2s ease-in-out;
+}
+@keyframes screenClick {
+    to {
+        transform: scale(5);
     }
 }
 /* header */
