@@ -1,0 +1,10 @@
+/* INTRO */
+.intro {
+    height: 100vh;
+    background-image: linear-gradient($simple-gradient), url(../img/intro-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $clr-neutral-light;
+}

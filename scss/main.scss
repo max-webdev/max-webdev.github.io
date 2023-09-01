@@ -1,0 +1,27 @@
+$clr-primary: #009efd;
+$clr-secondary: #2af598;
+$clr-neutral-light: #efefef;
+$clr-neutral-dark: #323232;
+
+$simple-gradient: rgba($clr-primary,.85), rgba($clr-secondary,.85);
+
+@import 'fonts'; // Import fonts
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.container {
+    width: 100%;
+    margin-inline: auto;
+
+} 
+.header {
+    display: none;
+}
+
+@import 'section-intro';
+@import 'breakpoint-lg'; // <= 1200px
+@import 'breakpoint-md'; // <= 992px
+@import 'breakpoint-sm'; // <= 768px
+@import 'breakpoint-xs'; // <= 600px
