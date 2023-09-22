@@ -35,12 +35,20 @@ body {
 .tagline {
     margin-bottom: 15px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
 }
 .btn {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 5px;
+}
+.text-gradient {
+    background: -webkit-linear-gradient(60deg, $simple-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    span {
+        -webkit-text-fill-color: $clr-primary;
+    }
 }
 /* HEADER */
 .header {
@@ -79,15 +87,24 @@ body {
         border-bottom: 4px solid $clr-gradient-primary;
     }
 }
+.social-list {
+    display: flex;
+    align-items: center;
+}
 .social-item {
-    margin-right: 20px;    
-    font-size: 30px;
+    margin-right: 20px;
     color: $clr-secondary;
-    transition: transform .3s linear;
-    &:hover {
-        display: inline-block;
+    &-footer {
         color: $clr-primary;
-        transform: scale(1.2);
+    }
+    &__icon {
+        font-size: 30px;
+        transition: transform .3s linear;
+        &:hover {
+            display: inline-block;
+            color: $clr-primary;
+            transform: scale(1.2);
+        }
     }
 }
 /* SECTION INTRO */
@@ -132,11 +149,6 @@ body {
     margin-bottom: 30px;
     font-size: 26px;
     line-height: 1;
-    span {
-        background: -webkit-linear-gradient(60deg, $simple-gradient);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
 }
 .intro-btn > .btn {
     border: 2px solid $clr-primary;
@@ -182,7 +194,7 @@ body {
     span {
         display: inline-block;
         width: 80px;
-        font-weight: 700;
+        font-weight: 500;
     }
 }
 .about-qualities {
@@ -273,6 +285,34 @@ body {
             i {
                 margin-right: 10px;
             }
+        }
+    }
+}
+/* SECTION FOOTER */
+.footer {
+    &-content {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 60px;
+        color: $clr-primary;
+    }
+    &-action {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        .social-item {
+            color: $clr-primary;
+        }
+    }
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 40px;
+        border-top: 2px solid rgba($clr-secondary, .3);
+        .nav-link {
+            font-size: 18px;
+            color: $clr-primary;
         }
     }
 }
