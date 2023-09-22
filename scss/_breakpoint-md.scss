@@ -1,4 +1,17 @@
 /* Medium devices (landscape tablets, max-width: 992px) */
 @media only screen and (max-width: 992px) {
-    
+    .container {
+        padding: 0 30px;
+    }
+    /* HEADER */
+    .nav-item {
+        margin-right: 35px;
+    }
+    /* SECTION WORK */
+    .work-list {
+        grid-gap: 45px 30px;
+    }
+    .work-action {
+        padding: 15px;
+    }
 }
