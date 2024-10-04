@@ -11,7 +11,11 @@ $simple-gradient: $clr-gradient-primary, $clr-gradient-secondary;
 
 @import 'fonts'; // Import fonts
 
-@import 'breakpoint-lg'; // => 993px
-@import 'breakpoint-md'; // <= 992px
-@import 'breakpoint-sm'; // <= 768px
-@import 'breakpoint-xs'; // <= 600px
+html {
+    scroll-behavior: smooth;
+}
+
+@import 'breakpoint-lg'; // <= 1440px
+@import 'breakpoint-md'; // <= 1024px
+@import 'breakpoint-sm'; // <= 834px
+@import 'breakpoint-xs'; // <= 768px
