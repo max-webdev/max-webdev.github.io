@@ -1,0 +1,48 @@
+@import 'colors';
+
+/* .footer */
+.footer {
+    background-color: $color-bg;
+    &-inner {
+        padding-top: 0;
+        padding-bottom: 30px;
+    }
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        &-border {
+            border-top: 4px solid $color-separator;
+        }
+    }
+}
+.footer-contacts {
+    max-width: 490px;
+    width: 100%;
+    font-weight: 700;
+    color: $color-main;
+    span {
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+    .address {
+        margin-bottom: 20px;
+    }
+    .contacts-link {
+        display: inline-block;
+        vertical-align: middle;
+        color: $color-active;
+        svg {
+            fill: $color-active;
+        }
+        &:hover {
+            color: $color-link-hover;
+            svg {
+                fill: $color-link-hover;
+            }
+        }
+    }
+}
+.footer-copyright {
+    color: $color-text;
+}

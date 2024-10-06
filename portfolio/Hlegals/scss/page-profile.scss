@@ -1,0 +1,54 @@
+@import 'colors';
+
+/* page-profile */
+.profile-inner {
+    display: flex;
+    padding: 190px 110px 40px;
+}
+.profile-img {
+    margin-right: 40px;
+}
+.profile-img img {
+    width: 100%;
+    border-radius: 12px;
+}
+.profile-text {
+    max-width: 640px;
+    width: 100%;
+    .name {
+        margin-bottom: 10px;
+    }
+    .actions {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 4px solid $color-separator;    
+    }
+    .role {
+        margin-right: 10px;
+        font-size: 16px;
+        color: $color-text;
+    }
+    a {
+        margin-right: 10px;
+        margin-bottom: 20px;
+        color: #24A3FF;
+        &:hover {
+            color: $color-link-hover;
+        }
+    }
+    .bio {
+        font-size: 18px;
+        line-height: 26px;
+        p {
+            margin-bottom: 40px;
+        }
+        h3 {
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #323264;
+        }
+    }
+}

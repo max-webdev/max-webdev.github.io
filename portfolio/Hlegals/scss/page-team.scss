@@ -1,0 +1,62 @@
+@import 'colors';
+
+/* page-team */
+.teammates-inner {
+    padding-top: 197px;
+}
+.teammates-title {
+    max-width: 864px;
+    width: 100%;
+    margin: 0 auto 80px;
+}
+.teammates-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.teammates-item {
+    margin-bottom: 40px;
+}
+.teammates-item-photo {
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.teammates-item-photo img {
+    width: 100%;
+}
+.teammates-item-link {
+    display: block;
+    position: relative;
+}
+.teammates-item-link:hover {
+    cursor: pointer;
+}
+.teammates-item-link:hover .name {
+    color: #f0145a;
+}
+.teammates-item-link .name {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #323264;
+}
+.teammates-item-link .role {
+    display: block;
+    font-size: 16px;
+    color: #b3b3ba;
+}
+.teammates-item-link::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: url(../img/arrow.svg) no-repeat, #f5f5fa;
+    background-position: center;
+}

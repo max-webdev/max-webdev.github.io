@@ -1,0 +1,17 @@
+@mixin gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@import 'fonts';
+@import 'colors';
+@import 'helpers';
+@import 'header';
+@import 'index';
+@import 'footer';
+@import 'page-about';
+@import 'page-contacts';
+@import 'page-team';
+@import 'page-profile';
+@import 'media';

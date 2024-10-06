@@ -1,0 +1,57 @@
+$color-white: #ffffff;
+$color-black: #000000;
+$color-main: #323264;
+$color-main-alt: #46466e;
+$color-main-soft: #686887;
+$color-link-hover: #f0145a;
+$color-active: #24a3ff;
+$color-active-hover: #0085ff;
+$color-active-active: #006ccf;
+$color-bg: #f5f5fa;
+$color-bg-alt: #ededf7;
+$color-text: #b3b3ba;
+$color-separator: #e6e6f0;
+$color-text-gradient: #f0145a;
+$gradient: linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+$gradient-soft: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+$gradient-red: linear-gradient(121.42deg, #F0145A 30.65%, #020202 107.33%);
+$gradient-supersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$gradient-text: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+$gradient-text-reverse: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+
+.bg-dark-blue {
+    background-color: #1C4280;
+}
+.bg-dark-yankees {
+    background-color: #143646;
+}
+.bg-cadmium-orange {
+    background-color: #F48B30;
+}
+.bg-deep-lilac {
+    background-color: #9E4DC3;
+}
+.bg-deep-saffron {
+    background-color: #FD9339;
+}
+.bg-platinum {
+    background-color: #E2E2E4;
+}
+.bg-cardinal {
+    background-color: #C71C36;
+}
+.bg-water {
+    background-color: #DCF3F9;
+}
+.bg-bright-gray {
+    background-color: #EAEAEA;
+}
+.bg-yankees-blue {
+    background-color: #282240;
+}
+.bg-indigo {
+    background-color: #b0a8cf;
+}
+.bg-black {
+    background-color: #000000;
+}

@@ -218,12 +218,13 @@ body {
         grid-gap: 60px 45px;
     }
     &-item {
-        border-radius: 20px;
+        position: relative;
+        border-radius: 15px;
         box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.20);
     }
     &-img {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
         overflow: hidden;
         img {
             aspect-ratio: 4/3;
@@ -231,6 +232,7 @@ body {
 	        transform: scale(1);
 	        -webkit-transition: .3s ease-in-out;
 	        transition: .3s ease-in-out;
+            object-fit: cover;
         &:hover {
             -webkit-transform: scale(1.3);
             transform: scale(1.3);
@@ -254,6 +256,19 @@ body {
     }
     &-link_icon {
         margin-right: 10px;
+    }
+    &-tags {
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        padding: 5px 0 0 5px;
+        span {
+            padding: 5px 10px;
+            background-image: linear-gradient(45deg, $simple-gradient);    
+            color: $clr-bg;
+            border-radius: 12px;
+            font-size: 12px;
+        }
     }
 }
 /* SECTION FOOTER */

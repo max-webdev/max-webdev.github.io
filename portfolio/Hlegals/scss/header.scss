@@ -1,0 +1,194 @@
+@import 'colors';
+
+/* .header */
+.header {
+    &--white {
+        color: $color-text;
+        .logo-subsection {
+            color: $color-main;
+        }
+        .lang-item:not(.active) .lang-button {
+            color: $color-text;
+        }
+        .header-nav .nav {
+            &-link {
+                color: $color-active;
+            }
+        }
+        .contacts-link {
+            svg {
+                fill: $color-active;
+            }
+        }
+        .burger-item {
+            .burger, .burger::before, .burger::after {
+                background-color: $color-main;
+            }
+        }
+    }
+    position: absolute;
+    width: 100%;
+    color: $color-white;
+    z-index: 1;
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+    }
+    &-logo {
+        .logo {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            &-subsection {
+                position: relative;
+                padding-left: 21px;
+                padding-right: 46px;
+                font-size: 38px;
+                font-weight: 400;
+                &::before {
+                    position: absolute;
+                    left: 0;
+                    content: '';
+                    width: 21px;
+                    height: 46px;
+                    background: url(../img/slash.svg) no-repeat;
+                    background-size: cover;
+                }
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 41px;
+                    height: 46px;
+                    background: url(../img/symbol-slash.svg) no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+        &-xs {
+            display: none;
+            .logo {
+                max-width: 77px;
+                margin-right: 11px;
+                &::after {
+                    width: 11px;
+                    height: 24px;
+                }
+                &-subsection {
+                    font-size: 19px;
+                    &::after {
+                        width: 21px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
+    &-actions {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+.header-contacts,
+.contacts-list,
+.nav-list {
+    display: flex;
+    align-items: center;    
+}
+.header-contacts {
+    margin-bottom: 20px;
+}
+.lang {
+    &-list {
+        margin-right: 5px;
+        font-size: 0;
+    }
+    &-item {
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 8px;
+        &:hover {
+            background: $color-bg-alt;
+        }
+        &.active {
+            background: $color-link-hover;
+            &:hover {
+                background: $color-link-hover;
+                color: $color-white;
+            }
+        }
+        &:not(.active) .lang-button {
+            cursor: pointer;
+        }
+        &:not(.active):hover .lang-button {
+            color: $color-text;
+        }
+    }
+    &-button {
+        padding: 5px;
+        border: none;
+        background: none;
+        font-size: 12px;
+        font-weight: 700;
+        color: $color-white;
+        letter-spacing: 1px;
+    }
+}
+.header-contacts {
+    .contacts-item {
+        margin-right: 13px;
+        &::before {
+            display: inline-block;
+            content: '';
+            width: 6px;
+            height: 6px;
+            margin-right: 10px;
+            border-radius: 50%;
+            background-color: $color-separator;
+            vertical-align: middle;        
+        }
+    }    
+    .contacts-phone {
+        font-weight: 700;
+        letter-spacing: 1px;    
+    }
+    .facebook-link {
+        display: inline-block;
+        vertical-align: middle;
+        &:hover svg {
+            fill: $color-active;
+        }
+    }
+}
+.header-nav .nav {
+    &-item {
+        margin-right: 15px;
+    }
+    &-link {
+        font-size: 18px;
+        font-weight: 500;
+        color: $color-white;
+        &.active {
+            border-bottom: 2px solid $color-link-hover;
+            color: $color-link-hover;
+        }
+        &:hover {
+            color: $color-link-hover;
+        }
+    }
+}
+.burger-item {
+    display: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    .burger, .burger::before, .burger::after {
+        background-color: $color-white;
+    }
+}
+.contacts-item:last-child, 
+.nav-item:last-child {
+    margin-right: 0;
+}
