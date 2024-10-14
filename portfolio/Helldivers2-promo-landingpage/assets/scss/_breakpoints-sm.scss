@@ -1,0 +1,31 @@
+  /* Small Screens (Tablets) */
+@media only screen and (max-width: 767px) {
+  .header {
+    .nav {
+      &-bar {
+        display: flex;
+      }
+      &-list {
+        width: 100%;
+        transform: translateX(-200%);
+      }
+    }
+  }
+  .about {
+    &-list {
+      row-gap: 60px;
+    }
+    &-item {
+      flex-wrap: wrap;
+      row-gap: 30px;
+      img {
+        width: 100%;
+      }
+      .desc {
+        max-width: 100%;
+      }
+    }
+  }
+
+}
+  

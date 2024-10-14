@@ -1,0 +1,321 @@
+$clr-black: rgb(23, 24, 26);
+$clr-white: #ffffff;
+$clr-yellow: #ffe900;
+$clr-blue__dark: #012838;
+$clr-blue__light: #143d4f;
+
+$color-bg: #012838;
+$clr-blueDark : #143d4f;
+$color-text: #fff;
+$color-yellow: #ffe900;
+
+@import 'fonts';
+@import '_styles';
+@import 'breakpoints-xl';
+@import 'breakpoints-lg';
+@import 'breakpoints-md';
+@import 'breakpoints-sm';
+@import 'breakpoints-xs';
+
+
+
+/* Animate on scroll */ 
+[data-aos="animate"] {
+    opacity: 0;
+    transition-duration: 1.5s;
+    transition-timing-function: ease;
+    transition-property: opacity, transform;
+}
+.animate {
+    opacity: 1;
+    transform: none !important;
+}
+ 
+  /* section intro */ 
+  .intro {
+    background-color: rgba($clr-blue__dark, .8);
+    &-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        &__videoloop {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .section-inner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 30px;
+        min-height: 100vh;
+    }
+    &-title {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 1;
+        animation: animate 1.5s ease;
+    }
+    &-subtitle {
+        max-width: 400px;
+        animation: animate 2.5s ease;
+    }
+    .links { 
+        animation: animate 3.5s ease;
+        a {
+            display: inline-flex;
+            align-items: center;
+            padding: 7px 20px;
+            margin-right: 10px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 500;
+            i {
+                margin-right: 10px;
+                font-size: 25px;
+            }
+        }
+    }
+  }
+  /* section trailer */ 
+  .section-trailer {
+    background: linear-gradient(rgba($color-bg, .8), rgba($color-bg, .8)), center no-repeat url(../img/bgWhite.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    .video {
+        width: 100%;
+        height: 100%;
+        transform: translateY(300px);
+    }
+  }
+  /* section about */
+  .about {
+    background-color: #143d4f;
+    &-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 100px;
+    }
+    &-item {
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+        transform: translateY(-200px);
+        &:nth-child(2n) {
+            flex-direction: row-reverse;
+        }
+        img {
+            object-fit: contain;
+        }
+        .desc {
+            width: 100%;
+        }
+        .title {
+            margin-bottom: 15px;
+            color: $color-yellow;
+            line-height: 1;
+            font-weight: 300;
+        }
+        .subtitle {
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+  }
+  /* section editions */ 
+  .edition {
+    background: linear-gradient(rgba($color-bg, .8), rgba($color-bg, .8)), center no-repeat url(../img/bgWhite.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    &-list {
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+    }
+    &-item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+        background-color: $clr-blueDark;
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            padding: 30px;
+        }
+        .title {
+            text-align: center;
+            font-weight: 400;
+            font-size: 22px;
+        }
+        .desc {
+            margin-bottom: 30px;
+        }
+        .cart {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 10px;
+            button {
+                padding: 10px 15px;
+                border: none;
+                border-radius: 25px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+        }
+        .price {
+            width: 100%;
+            font-size: 26px;
+        }
+        .addCart {
+            flex-grow: 1;
+        }
+    }
+  
+  }
+  /* section enemies */
+  .enemy {
+    .swiper {
+        width: 100%;
+        height: 100%;
+        &-slide {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all .25s linear;
+            text-align: center;
+            &-active img {
+                background: url(../img/helldivers-2-enemies-background.png) no-repeat center;
+                background-size: contain;
+            }
+            &:not(.swiper-slide-active) {
+                transform: scale(.5);
+                h3, p {
+                    opacity: 0;
+                }
+            }
+            h3 {
+                margin-bottom: 30px;
+                font-weight: 400;
+                font-size: 24px;
+            }
+            p {
+                font-weight: 300;
+                font-size: 18px;
+            }
+        }
+        &-button-prev, &-button-next {
+            width: 50px;
+            height: 50px;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: #fff;
+            &::after {
+                font-size: 24px;
+            }
+        }
+    }
+  }
+  
+  /* section requirements */ 
+  .requirements {
+    background: linear-gradient(rgba($color-bg, .8), rgba($color-bg, .8)), center no-repeat url(../img/bgWhite.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    .tablist {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        &-inner {
+            background-color: $clr-black;
+            border-radius: 30px;
+            transition: box-shadow .2s ease-in-out;
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                
+            }
+        }
+        button {
+            min-width: 140px;            
+            padding: 10px 15px;
+            background: none;
+            border: none;            
+            border-radius: 30px;
+            color: $clr-white;
+            transition: all .15s ease-in-out;
+            cursor: pointer;
+            &[aria-selected="true"] {
+                background-color: $clr-white;
+                color: $clr-black;
+            }
+            &:not([aria-selected="true"]):hover {
+                color: $color-yellow;
+            }
+        }
+    }
+    .ps5-inner {
+        display: flex;
+        justify-content: center;
+    }
+    .steam-panel {
+        h3 {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        &__list {
+            display: flex;
+        justify-content: center;
+        column-gap: 30px;
+        li {
+            margin-bottom: 15px;
+            list-style: none;
+        }
+        span {
+            margin-right: 10px;
+            color: #739bb1;
+        }
+        }
+    }
+  }
+  /* footer */
+  .footer {
+    background: linear-gradient(90deg, rgba(1,40,56,1) 50%, rgba(1,40,56,0) 90%), center no-repeat url(/assets/img/helldivers-2-squad-background.jpg);
+    background-size: cover;
+    padding: 60px 0;
+    .section-inner {
+        width: 100%;
+        max-width: 600px;
+    }
+    .nav {
+        &-list {
+            display: flex;
+            column-gap: 30px;
+            margin-bottom: 30px;
+            font-weight: 300;
+            font-size: 18px;
+        }
+        &-link {
+            color: $color-text;
+        }
+    }
+    p {
+        margin-bottom: 30px;
+        font-size: 14px;
+    }
+  }
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,11 @@
+  /* Medium Screens (Large Tablets) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about {
+    &-item {
+      img {
+        width: 50%;
+      }
+    }
+  }
+}
+  
