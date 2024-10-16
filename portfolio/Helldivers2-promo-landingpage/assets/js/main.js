@@ -40,19 +40,33 @@ tabButtons.forEach(button => button.addEventListener('click', handleTabClick));
 // Animate on scroll
 
 const dataAOS = document.querySelectorAll('[data-aos="animate"]');
+const nav = document.querySelector('.nav');
+const navBar = document.querySelector('.nav-bar');
+const navList = document.querySelector('.nav-list');
+const navItem = navList.querySelectorAll('.nav-item');
 
 function animateOnScroll() {
-  dataAOS.forEach(function(animate) {
-  const { scrollY: y, innerHeight: h } = window;
-  if (y > animate.offsetTop - h / 1.2) animate.classList.add('animate');
-})
+  dataAOS.forEach(function (animate) {
+    const { scrollY: y, innerHeight: h } = window;
+    if (y > animate.offsetTop - h / 1.2) animate.classList.add('animate');
+    if (y > 200) {
+      nav.classList.add('nav-fixed');
+    } else {
+      nav.classList.remove('nav-fixed');
+    }
+  })
 }
 
 window.addEventListener('scroll', animateOnScroll);
 
 // navBar button
 
-const navBar = document.querySelector('.nav-bar');
 navBar.addEventListener('click', () => {
+  nav.classList.toggle('nav__active');
   navBar.classList.toggle('nav-bar__active');
 });
+
+navList.addEventListener('click', () => {
+  nav.classList.remove('nav__active');
+  navBar.classList.toggle('nav-bar__active');
+})
