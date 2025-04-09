@@ -1,13 +1,45 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Echoes of the Hollow — атмосферная приключенческая игра с элементами крафта, исследований и добычи ресурсов в древнем подземном мире. Погрузись в тайны, которые скрывают глубины."
+/>
+  <meta
+    name="keywords"
+    content="Echoes of the Hollow, приключенческая игра, крафтинг, исследования, подземелья, казуальная игра, добыча ресурсов, тайны, инди-игра, подземный мир"
+  />
+  <meta name="author" content="..." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#1e1e1e" />
+  <link rel="canonical" href="https://example.com/" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   <title>Echoes of the Hollow</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-gray-900 text-white font-sans">
-  <!-- Первый блок -->
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <nav class="header__nav">
+          <a href="/" class="header__logo"><img src="images/logo.png" alt="Logo Echoes of the Hollow"></a>
+          <button class="nav__burger" aria-label="Toggle menu">
+              <span class="nav__burger-line"></span>
+              <span class="nav__burger-line"></span>
+              <span class="nav__burger-line"></span>
+          </button>
+          <ul class="nav__list">
+              <li class="nav__item"><a href="/">Главная страница</a></li>
+              <li class="nav__item"><a href="gameworld.html">Мир игры</a></li>
+              <li class="nav__item"><a href="gameclasses.html">История мира</a></li>
+              <li class="nav__item"><a href="contacts.html">Контакты</a></li>
+          </ul>
+      </nav>
+      </div>
+    </div>
+  </header>
   <section class="hero">
     <div class="container">
         <div class="hero__inner">
@@ -18,8 +50,6 @@
         </div>
     </div>
   </section>
-
-  <!-- Второй блок -->
   <section class="about">
     <div class="container">
         <div class="about__inner">
@@ -30,8 +60,6 @@
         </div>
     </div>
   </section>
-
-  <!-- Третий блок -->
   <section class="gameworld">
     <div class="container">
         <div class="gameworld__inner">
@@ -43,8 +71,6 @@
         </div>  
     </div>
   </section>
-
-  <!-- Четвёртый блок -->
  <section class="features">
     <div class="container">
         <div class="features__inner">
@@ -53,54 +79,60 @@
             <div class="features__list">
                 <div class="features__item">
                     <img src="images/features-craft.jpg" alt="Features Craft Table">
-                  <h3>Глубокий крафтинг</h3>
-                  <p>Создавай инструменты, оборудование и исследовательские станции, используя найденные ресурсы и древние схемы.</p>
+                    <div>
+                      <h3>Глубокий крафтинг</h3>
+                      <p>Создавай инструменты, оборудование и исследовательские станции, используя найденные ресурсы и древние схемы.</p>
+                    </div>
                 </div>
                 <div class="features__item">
-                    <img src="images/features-craft.jpg" alt="Features Craft Table">
-                  <h3>Процедурная генерация</h3>
-                  <p>Каждое подземелье уникально. Твое приключение никогда не будет одинаковым дважды.</p>
+                    <img src="images/features-generation.jpg" alt="Procedural generation">
+                    <div>
+                      <h3>Процедурная генерация</h3>
+                      <p>Каждое подземелье уникально. Твое приключение никогда не будет одинаковым дважды.</p>
+                    </div>
                 </div>
                 <div class="features__item">
-                    <img src="images/features-craft.jpg" alt="Features Craft Table">    
-                  <h3>История через детали</h3>
-                  <p>Собирай обрывки знаний, разбирай старые машины и восстанавливай историю исчезнувшей цивилизации.</p>
+                    <img src="images/features-story.jpg" alt="History through details">    
+                    <div>
+                      <h3>История через детали</h3>
+                      <p>Собирай обрывки знаний, разбирай старые машины и восстанавливай историю исчезнувшей цивилизации.</p>
+                    </div>
                 </div>
             </div>
             </div>
         </div>
     </div>
 </section>
-
-  <!-- Пятый блок -->
-  <section class="desc py-16 px-8 bg-gradient-to-r from-indigo-900 to-purple-800">
+  <section class="desc">
     <div class="container">
         <div class="desc__inner">
-            <h2 class="text-3xl font-bold text-center mb-10">Что ждёт тебя в подземельях?</h2>
+            <h2 class="section__name">Что ждёт тебя в подземельях?</h2>
             <div class="desc__content">
-                <div class="desc__list space-y-6 max-w-6xl mx-auto">
-                    <div class="desc__item flex bg-gray-800 rounded-xl shadow-md overflow-hidden">
-                      <img src="https://images.unsplash.com/photo-1601987077228-2bcf58121f67" alt="Тоннель" class="w-40 h-40 object-cover">
-                      <div class="p-6">
-                        <p>Ты пробираешься сквозь древние тоннели, стены которых покрыты странными символами. В этих местах время словно остановилось, а каждый шаг может привести к неожиданному открытию.</p>
+                <div class="desc__list">
+                    <div class="desc__item">
+                      <img src="images/desc-tunnel.jpg" alt="tunnel">
+                      <div class="desc__text">
+                        <p>Ты пробираешься сквозь древние тоннели, стены которых покрыты странными символами. В этих местах время словно остановилось, а каждый шаг может привести к неожиданному открытию. Ты чувствуешь, как камень под ногами вибрирует — будто кто-то, или нечто, знает о твоем приближении.</p>
                       </div>
                     </div>
-                    <div class="desc__item flex bg-gray-800 rounded-xl shadow-md overflow-hidden">
-                      <img src="https://images.unsplash.com/photo-1610878180933-c1d8b2ebbf43" alt="Кристаллы" class="w-40 h-40 object-cover">
-                      <div class="p-6">
-                        <p>Глубоко под землёй сияют кристаллы, пульсирующие мягким светом. Они не просто источник энергии — они память о чём-то древнем, живом и забытом.</p>
+                    <div class="desc__item">
+                      <img src="images/desc-crystal.jpg" alt="crystal">
+                      <div class="desc__text">
+                        <p>Глубоко под землёй сияют кристаллы, пульсирующие мягким светом. Они не просто источник энергии — они память о чём-то древнем, живом и забытом. Некоторые кристаллы поют, издавая мелодии, что звучат как зов из прошлого.</p>
                       </div>
                     </div>
-                    <div class="desc__item flex bg-gray-800 rounded-xl shadow-md overflow-hidden">
-                      <img src="https://images.unsplash.com/photo-1549887534-1335a4f7d7f4" alt="Артефакт" class="w-40 h-40 object-cover">
-                      <div class="p-6">
-                        <p>Среди обломков ты находишь странный механизм, похожий на сердце давно умершего мира. Его пульсация заставляет задуматься — а действительно ли всё мертво в этих глубинах?</p>
+                    <div class="desc__item">
+                      <img src="images/desc-artifact.jpg" alt="artifact">
+                      <div class="desc__text">
+                        <p>Среди обломков ты находишь странный механизм, похожий на сердце давно умершего мира. Его пульсация заставляет задуматься — а действительно ли всё мертво в этих глубинах? Каждое нажатие, каждый поворот деталей — как попытка услышать голос тех, кто ушел навсегда.
+
+                        </p>
                       </div>
                     </div>
-                    <div class="desc__item flex bg-gray-800 rounded-xl shadow-md overflow-hidden">
-                      <img src="https://images.unsplash.com/photo-1560264280-88b68371db39" alt="Исследователь" class="w-40 h-40 object-cover">
-                      <div class="p-6">
-                        <p>Ты — не герой, а наблюдатель и ученик. Подземелья говорят с тобой через детали, звуки и молчаливые конструкции. Здесь каждый объект — ключ к истории, которую никто больше не расскажет.</p>
+                    <div class="desc__item">
+                      <img src="images/desc-researcher.jpg" alt="researcher">
+                      <div class="desc__text">
+                        <p>Ты — не герой, а наблюдатель и ученик. Подземелья говорят с тобой через детали, звуки и молчаливые конструкции. Здесь каждый объект — ключ к истории, которую никто больше не расскажет. Ты учишься слушать тишину и читать тени, ведь именно они ведут к истине.</p>
                       </div>
                     </div>
                   </div>
@@ -110,13 +142,43 @@
     
     
   </section>
-
-  <!-- Шестой блок -->
-  <section class="py-16 px-8 bg-gray-900">
-    <div class="max-w-4xl mx-auto text-center">
-      <p class="mb-6 text-lg">Echoes of the Hollow — это не просто игра. Это приглашение к исследованию, внимательности и любопытству. Подземелья здесь живые, они запоминают твои действия, и они ждут, чтобы ты узнал их секреты.</p>
-      <p class="text-lg">Начни своё путешествие, когда будешь готов. Но помни — чем глубже ты копаешь, тем ближе ты к истине... и к опасности.</p>
+  <section class="game">
+    <div class="container">
+      <div class="game__inner">
+        <div class="game__content">
+          <p>Echoes of the Hollow — это не просто игра. Это приглашение к исследованию, внимательности и любопытству. Подземелья здесь живые, они запоминают твои действия, и они ждут, чтобы ты узнал их секреты.</p>
+          <p>Начни своё путешествие, когда будешь готов. Но помни — чем глубже ты копаешь, тем ближе ты к истине... и к опасности.</p>
+        </div>
+      </div>
     </div>
   </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <a href="/" class="footer__logo"><img src="images/logo.png" alt="Echoes of the Hollow logo"></a>
+        <ul class="footer__nav">
+          <li><a href="#">Главная страница</a></li>
+          <li><a href="#">Политика конфиденциальности</a></li>
+          <li><a href="#">Условия использования</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__text">
+        <ul class="footer__social">
+          <li><a href="#"><img src="images/facebook-svgrepo-com.svg" alt="Facebook link"></a></li>
+          <li><a href="#"><img src="images/instagram-svgrepo-com.svg" alt="Instagram link"></a></li>
+          <li><a href="#"><img src="images/telegram-svgrepo-com.svg" alt="Telegram link"></a></li>
+        </ul>
+        <div class="footer__contacts">
+          <p>Telefon: +90 538 666 58 12</p>
+          <p>E-posta: support@eshoes.com</p>
+          <p>Adres: Cumhuriyet Mahallesi, Kızılay, Atatürk Blv No:91 D:29, 06420 Çankaya/Ankara, Türkiye</p>
+        </div>
+        <p class="footer__copyright">© 2025 Echoes of the Hollow. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/script.js"></script>
 </body>
 </html>
