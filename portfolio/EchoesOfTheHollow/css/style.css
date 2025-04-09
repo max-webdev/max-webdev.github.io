@@ -106,6 +106,9 @@ body.no-scroll {
     border-bottom: 1px solid #6C6EA0;
     z-index: 99;
 }
+.header-unset {
+    position: unset;
+}
 .header__inner {
     padding: 15px 0;
 }
@@ -165,6 +168,9 @@ body.no-scroll {
     flex-direction: column;
 }
 .hero__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     width: 100%;
     max-width: 700px;
     padding: 30px;
@@ -173,12 +179,18 @@ body.no-scroll {
     color: #fff;
 }
 .hero__title {
+    max-width: 75%;
     margin-bottom: 15px;
     font-family: 'Stonecross';
     font-size: 3em;
     text-align: center;
 }
+.hero__img {
+    width: 100%;
+    max-width: 25%;
+}
 .hero__subtitle {
+    width: 100%;
     font-size: 1.2em;
 }
 /* About section */
@@ -269,6 +281,9 @@ body.no-scroll {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: url(../images/stone-1.png), url(../images/stone-2.png);
+    background-repeat: no-repeat;
+    background-position: bottom right, bottom left;
 }
 .game__content p {
     width: 100%;
@@ -389,8 +404,66 @@ body.no-scroll {
     .desc__item img {
         max-width: 400px;
     }
+    .game__content {
+        background: none;
+    }
     .footer__nav {
         flex-direction: column;
         text-align: center;
     }
+}
+
+/* page Contacts */
+.contacts__inner {
+    padding-top: 30px;
+}
+.contacts__content {
+    display: flex;
+    justify-content: center;
+}
+.contacts-form {
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    margin-bottom: 60px;
+    background-color: rgba(55,65,81,1);
+    border: 1px solid #6C6EA0;
+    border-radius: 10px;
+}
+.contacts-form__group {
+    margin-bottom: 30px;
+}
+.contacts-form__label {
+    display: block;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 1.2em;
+}
+.contacts-form__input, .contacts-form__textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #F7F4F3;
+    border: 1px solid #6C6EA0;
+    border-radius: 5px;
+}
+.contacts-form__textarea {
+    min-height: 200px;
+    resize: none;
+}
+.contacts-form__button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #6C6EA0;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(17,24,39,1);
+    font-size: 18px;
+    color: #DAD7CD;
+    cursor: pointer;
+}
+.contacts-form__button:hover {
+    padding: 9px;
+    border: 1px solid #6C6EA0;
+    background-color: #39578A;
 }
