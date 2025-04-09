@@ -1,0 +1,179 @@
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/Roboto/Roboto-Light.ttf) format(truetype); }
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf) format(truetype); }
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf) format(truetype); }
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    src: url(../fonts/Roboto/Roboto-SemiBold.ttf) format(truetype); }
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf) format(truetype); }
+@font-face {
+    font-family: "Stonecross";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Stonecross.ttf) format(truetype); }
+
+/* Reset styles */
+*, *::before, *::after {
+    box-sizing: border-box; 
+}   
+* {
+    margin: 0; 
+    padding: 0; 
+}    
+ul [role='list'], ol[role='list']{
+    list-style: none; 
+}
+li {
+    list-style: none;
+}
+html:focus-within{
+    scroll-behavior: smooth; 
+}    
+a {
+    text-decoration: none;
+}    
+a:not([class]) {
+    text-decoration-skip-ink: auto; 
+}
+img, picture, svg, video, canvas {
+        max-width: 100%;
+        height: auto; 
+        vertical-align: middle; 
+        font-style: italic; 
+        background-repeat: no-repeat; 
+        background-size: cover;
+}    
+input, button, textarea, select{
+        font: inherit; 
+}    
+@media (prefers-reduced-motion: reduce){
+        html:focus-within {
+            scroll-behavior: auto;
+        }
+        *, *::before, *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+            transition: none;
+        }
+}    
+body, html{
+        height: 100%; 
+        scroll-behavior: smooth;
+        background-color: rgba(31,41,55,1);
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.5;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.section__name {
+    margin-bottom: 30px;
+    font-size: 2em;
+    text-align: center;
+}
+/* Hero section */
+.hero {
+    background: url(../images/bg-hero.jpg) center no-repeat;
+    background-size: cover;
+}
+.hero__inner {
+    min-height: 70vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero__content {
+    width: 100%;
+    max-width: 700px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    color: #fff;
+}
+.hero__title {
+    margin-bottom: 15px;
+    font-family: 'Stonecross';
+    font-size: 3em;
+    text-align: center;
+}
+.hero__subtitle {
+    font-size: 1.2em;
+}
+/* About section */
+.about__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+.about__content {
+    width: 100%;
+    max-width: 900px;
+}
+.about__content p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* Gameworld section */
+.gameworld {
+    background-color: rgba(17,24,39,1);
+}
+.gameworld__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0
+}
+.gameworld__content {
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Features section */
+.features__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+.features__list {
+    display: flex;
+    gap: 20px;
+}
+.features__item {
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(55,65,81,1);
+    border-radius: 10px;
+}
+.features__item img,
+.features__item h3,
+.features__item p {
+    margin-bottom: 30px;
+}
+/* Desc section */
