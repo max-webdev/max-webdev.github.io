@@ -411,6 +411,16 @@ body.no-scroll {
         flex-direction: column;
         text-align: center;
     }
+    .story-second__content {
+        flex-direction: column;
+    }
+    .story-third__content {
+        flex-direction: column-reverse;
+    }
+    .features-second,
+    .features-third {
+        text-align: center;
+    }
 }
 
 /* page Contacts */
